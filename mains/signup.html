@@ -130,6 +130,40 @@
       .form a:hover {
         text-decoration: underline;
       }
+      @media (max-width: 500px) {
+              body {
+                align-items: flex-start;
+                padding-top: 40px;
+                min-height: 100svh;
+              }
+              .card {
+                width: 90%;
+                max-width: 350px;
+                height: auto;
+                padding: 20px;
+                border-radius: 16px;
+              }
+              #logo {
+                width: 55%;
+                padding: 20px;
+              }
+
+              ul {
+                padding: 30px 30px;
+                font-size: 14px;
+              }
+              .fms {
+                font-size: 14px;
+              }
+
+              button {
+                font-size: 14px;
+              }
+
+              .form a {
+                font-size: 13px;
+              }
+            }
     </style>
   </head>
   <body>
@@ -138,8 +172,8 @@
         <img id="logo" src="/resources/download.png" alt="Spotify logo" />
       </div>
       <ul>
-        <li><a class="nav" href="login.html">LOG IN</a></li>
-        <li><a class="nav" href="signup.html">SIGN UP</a></li>
+        <li><a class="nav" href="../index.html">LOG IN</a></li>
+        <li><a class="nav" href="/mains/signup.html">SIGN UP</a></li>
       </ul>
       <div class="form">
         <input class="fms" type="text" name="" id="" placeholder="Username" required/>
