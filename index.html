@@ -28,6 +28,7 @@
                 rgb(24, 34, 18) 50%,
                 #48494b 100%
               );
+              
 
               padding: 0px 30px 30px 30px;
               width: 400px;
@@ -37,6 +38,10 @@
               box-shadow: 5px 5px 20px #48494b;
               transition: transform 0.3s ease-in-out;
             }
+            /* .cardLig{
+              background-color: #ffffff23;
+              backdrop-filter: blur(10px);
+            } */
             .card:hover {
               /* transform: scale(1.05); */
               box-shadow: 7px 7px 25px #48494b;
@@ -138,6 +143,9 @@
               font-weight: bolder;
               color: #00ef5f;
             } */
+            .hid{
+              display: none;
+            }
             @media (max-width: 500px) {
               body {
                 align-items: flex-start;
@@ -181,7 +189,7 @@
     </style>
   </head>
   <body>
-    <div class="card">
+    <div class="card cardLig">
       <div class="logoImg">
         <img id="logo" src="/resources/download.png" alt="Spotify logo" />
         <!-- <p>Login</p> -->
@@ -190,7 +198,7 @@
         <li><a class="nav" href="index.html">LOG IN</a></li>
         <li><a class="nav" href="/mains/signup.html">SIGN UP</a></li>
       </ul>
-      <div class="form">
+      <form class="form">
         <input
           class="fms"
           type="text"
@@ -213,7 +221,15 @@
         </div>
         <button type="submit">LOG IN</button>
         <a href="#forgotPass">Forgot Password?</a>
-      </div>
+        <a class="hid" href="/mains/comingsoon.html">cs</a>
+      </form>
     </div>
+    <script>
+      let btn = document.querySelector("button");
+      let hid = document.querySelector(".hid")
+      btn.addEventListener("click",function(){
+        hid.click();
+      })
+    </script>
   </body>
 </html>
